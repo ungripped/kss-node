@@ -116,7 +116,8 @@ process.nextTick(function() {
 		kss.traverse(options.sourceDirectory, {
 			multiline : true,
 			markdown  : true,
-			markup    : true
+			markup    : true,
+			mask	  : /\.scss/
 		}, function(err, sg) {
 			styleguide = sg;
 
